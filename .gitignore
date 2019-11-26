@@ -7,14 +7,6 @@
 # Ignore bundler config.
 /.bundle
 
-# Ignore Gemfile config.
-Gemfile
-Gemfile.lock
-
-# Ignore the default SQLite database.
-/db/*.sqlite3
-/db/*.sqlite3-journal
-
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
@@ -25,11 +17,8 @@ Gemfile.lock
 /storage/*
 !/storage/.keep
 
-/node_modules
-/yarn-error.log
-
-/public
 .byebug_history
+.env
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
