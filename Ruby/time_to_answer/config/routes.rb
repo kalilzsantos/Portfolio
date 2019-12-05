@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   namespace :admins_backoffice do
     get 'welcome/index' #Dashboard
-    resources :admins, only: [:index, :edit, :delete]
+    resources :admins, expect: [:delete]
   end
   namespace :site do
     get 'welcome/index'
