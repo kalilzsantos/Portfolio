@@ -6,8 +6,12 @@
 
 //= require jquery/dist/jquery
 //= require bootstrap/dist/js/bootstrap
+//= require bootstrap/dist/js/bootstrap.bundle.js
+//= require bootstrap-growl-ifightcrime/jquery.bootstrap-growl
 //= require jquery.easing/jquery.easing
 //= require sb-admin-2
+//= require popper
+//= require bootstrap-growl-ifightcrime/jquery.bootstrap-growl
 
   #<!-- Core plugin JavaScript-->
   #   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>

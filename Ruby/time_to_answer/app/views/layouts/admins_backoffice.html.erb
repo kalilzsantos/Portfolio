@@ -82,7 +82,7 @@
                 <!-- Dropdown - User Information -->
                 <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in show" aria-labelledby="userDropdown">
                   <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                    <i class="fas fa-sign"></i>
+                    <i class="fas fa-sign fa-fw"></i>
                         Logout
                   </a>
                 </div>
@@ -147,6 +147,16 @@
     <%= javascript_include_tag 'application' %>
     <%= javascript_include_tag 'admins_backoffice' %>
 
-  </body>
+    <% if notice %>
+      <%= javascript_tag do %>
+        $.bootstrapGrowl(' <%= notice %> ', {
+          type: 'success', // (null, 'info', 'danger', 'success')
+          align: 'center', // ('left', 'right', or 'center')
+          allow_dismiss: true, // If true then will display a cross to close the popup.
+          stackup_spacing: 10 // spacing between consecutively stacked growls.
+        });
+      <% end %>
+    <% end %>
 
+  </body>
 </html>

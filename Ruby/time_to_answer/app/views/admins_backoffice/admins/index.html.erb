@@ -44,12 +44,18 @@
                 <%= link_to edit_admins_backoffice_admin_path(admin), class:" btn-info btn-circle" do %>
                   <i class="fa fa-edit fw"></i>
                 <% end %>
-                <button type="button" class="btn btn-danger btn-circle"><i class="fa fa-trash"></i></button>
+
+                <%= link_to admins_backoffice_admin_path(admin), method: :delete, class:" btn btn-danger btn-circle ", data: { confirm: 'Você tem certeza?' } do %>
+                  <i class="fa fa-trash"></i>
+                <% end %>
               </td>
             </tr>
           <% end %>
         </tbody>
       </table>
     </div>
+  </div>
+  <div>
+    <%= paginate @admins, class: "text-center"%>
   </div>
 </div>
