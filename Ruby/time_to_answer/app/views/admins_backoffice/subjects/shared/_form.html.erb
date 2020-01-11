@@ -1,0 +1,25 @@
+<div class="col-md-6 col-sm-6 col-xs-12">
+  <div class="col-lg-12">
+    <h2 class="page-header"> <%= action_message %> <h2>
+  </div>
+</div>
+  <% if @subject.errors.any? %> 
+    <div class='alert alert-danger alert-dismissable'>
+      <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>x</button>
+      <ul>
+        <% if @subject.errors.full_messages.each do |message| %>
+          <li> <%= message %><%end%> </li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %> 
+
+
+  <%= form_with(model:  [ :admins_backoffice, @subject ], local: true) do |form| %>
+    <div class="form-group">
+      <%= form.label :description %>
+      <%= form.text_field :description, class: 'form-control', placeholder:"Descrição do Assunto/Área" %>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Salvar</button>
+  <% end %> 
