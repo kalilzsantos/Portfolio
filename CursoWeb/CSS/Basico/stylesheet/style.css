@@ -1,0 +1,112 @@
+/*Limpando config padrões*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-size: 1em;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: white;
+    
+}
+/*      LAYOUT       */
+#area-cabecalho{
+    background: rgb(252, 193, 1);
+    padding: 15px;
+    text-align: center;
+}
+#area-logo, #area-menu{
+    padding: 15px;
+}
+#container-index{
+    background: rgb(235, 235, 235);
+    width: 920px;
+    margin: 0px auto;
+    padding: 15px;
+}
+#container-news{
+    width: 660px;
+    float: left;
+}
+#container-options{
+    width: 240px;
+    float: right;
+}
+#rodape{
+    clear: both;
+    text-align: center;
+    padding: 15px;
+    background-color: #CCC;
+}
+
+
+/*------Formatação do menu------*/
+
+.branco{
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+a:link, a:visited{
+    color:#f7b600;
+    
+}
+a:hover{
+    color: rgb(0, 0, 0);
+}
+
+#area-cabecalho a:link, #area-cabecalho a:visited{
+    color: white;
+    padding: 5px 10px;
+}
+#area-cabecalho a:hover{
+    color:rgb(252, 193, 1);
+    background: rgb(255, 255, 255);
+    border: double;
+}
+/*Links com clique em cima*/
+#area-cabecalho a:active{
+    color: rgb(0, 0, 0);
+}
+
+.conteudo-lateral{
+    background: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.postagem-lateral{
+    font-size: 0.8em;
+    padding: 5px;
+    border-bottom: 1px dotted #CCC;
+}
+
+/*------Formatação Geral------*/
+
+.postagem{
+    margin: 10px 15px;
+    background: white;
+    padding: 5px;
+}
+.data-postagem{
+    font-size: 0.8em;
+    border-bottom: 1px solid #f4f4f4;
+    margin-bottom: 10px;
+    padding: 10px; 
+    display: block;
+}
+img{
+    margin: 5px 0px;
+}
+h1{
+    color: #4e4e4e;
+    font-size: 2.5em;
+}
+h2{
+    color:rgb(252, 193, 1);
+}
+h3{
+    color:#565656;
+    background: #CCC;
+    padding: 5px;
+}

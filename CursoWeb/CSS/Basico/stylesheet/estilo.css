@@ -1,0 +1,37 @@
+a{
+    color: rgb(2, 0, 126);
+}
+
+body{
+    background: #f4f4f4;
+}
+
+#principal{
+    width: 1200px;
+    border: navy solid 3px;
+    margin: 25px;
+    background: rgb(186, 206, 224);
+    padding: 10px;
+}
+
+.conteudo{
+    background: rgb(116, 116, 240);
+    border: 5px solid #a111c5;
+    width: 380px;
+    margin: 5px;
+    float: left;
+    color: #ffffff;
+}
+
+.galeria{
+    background: moccasin;
+    width: 265px;
+    margin: 10px;
+    padding: 5px;
+    float: left;
+}
+
+.clear{
+    clear: both;
+}
+
